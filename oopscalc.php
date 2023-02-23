@@ -39,6 +39,7 @@ echo "Result after Subtraction: ". $calc-> sub()."\n";
 echo "Result after Multiplication: ". $calc-> multiply()."\n"; 
 echo "Result after division: ". $calc-> divide()."\n"; 
 ?>
+	
 </div>
 </body>
 </html>
