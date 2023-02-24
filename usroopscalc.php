@@ -4,35 +4,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <body>
-<?php
-class calculator{
-	public $num1, $num2, $result, $operator;
-	function __construct($num1, $num2, $operator){
-		$this->num1= $num1;
-		$this->num2= $num2;
-		$this->operator= $operator;
-		
-	}
-	function operatormethod(){
-	switch ($this-> operator){
-		case 'Add':
-		$result= $this->num1 + $this->num2;
-		break;
-		case 'Subtract':
-		$result= $this->num1 - $this->num2;
-		break;
-		case 'Multiply':
-		$result= $this->num1 * $this->num2;
-		break;
-		case 'Divide':
-		$result= $this->num1 / $this->num2;
-		break;
-	}
-	return $result;
-	}
-	
-}
-?>
+
 
 <div class="container mt-3">
 <h3> CALCULATOR </h3>
@@ -52,7 +24,9 @@ class calculator{
 <input type="submit" class="btn btn-primary" name="operator" value="Divide" >
 </form>
 
-<?php 
+<?php
+include 'classcalculator.php';
+ 
 if(isset($_POST['num1'])){
 $num1= $_POST['num1'];
 $num2= $_POST['num2'];
