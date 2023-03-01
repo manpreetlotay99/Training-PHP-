@@ -41,6 +41,7 @@ if ($conn->query($sql) === TRUE) {
 <?php
 }
 $conn->close();
+	
 ?>
 </body>
 </html>
